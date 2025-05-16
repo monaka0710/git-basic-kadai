@@ -1,0 +1,73 @@
+PS C:\Users\yh130> cd C:\Users\yh130
+PS C:\Users\yh130> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\yh130
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/05/16     13:00                git_challenge
+
+
+PS C:\Users\yh130> cd git_challenge
+PS C:\Users\yh130\git_challenge> git init
+Initialized empty Git repository in C:/Users/yh130/git_challenge/.git/
+PS C:\Users\yh130\git_challenge> git add hello_world.txt
+PS C:\Users\yh130\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) 86e5971] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\yh130\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\yh130\git_challenge> git add hello_world.txt
+PS C:\Users\yh130\git_challenge> git commit -m "日本語訳を追記"
+[main 22890da] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\yh130\git_challenge> git log --oneline
+22890da (HEAD -> main) 日本語訳を追記
+86e5971 hello_world.txtを追加
+PS C:\Users\yh130\git_challenge> 
+
+PS C:\Users\yh130> cd C:\Users\yh130
+PS C:\Users\yh130> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\yh130
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/05/16     13:36                git_challenge
+
+
+PS C:\Users\yh130> cd git_challenge
+PS C:\Users\yh130\git_challenge> git init
+Initialized empty Git repository in C:/Users/yh130/git_challenge/.git/
+PS C:\Users\yh130\git_challenge> git add hello_world.txt
+PS C:\Users\yh130\git_challenge> git commit -m "hello_world.txtの作成"
+[main (root-commit) d932279] hello_world.txtの作成
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\yh130\git_challenge> git add hello_world.txt
+PS C:\Users\yh130\git_challenge> git commit -m "Hello,world!の追記"
+[main 9d8d9b1] Hello,world!の追記
+ 1 file changed, 1 insertion(+)
+PS C:\Users\yh130\git_challenge> git add hello_world.txt
+PS C:\Users\yh130\git_challenge> git commit -m "日本語訳を追記"
+[main 2bf199a] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\yh130\git_challenge> type hello_world.txt
+Hello,world!
+縺薙ｓ縺ｫ縺｡縺ｯ縲∽ｸ也阜!
+PS C:\Users\yh130\git_challenge> git log --oneline
+2bf199a (HEAD -> main) 日本語訳を追記
+9d8d9b1 Hello,world!の追記
+d932279 hello_world.txtの作成
+PS C:\Users\yh130\git_challenge> 
